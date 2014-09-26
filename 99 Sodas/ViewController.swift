@@ -13,6 +13,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // 99 Sodas
+        for var sodas = 99; sodas > 0; sodas--
+        {
+            if sodas == 1
+            {
+                println("There is \(sodas) soda on the wall")
+            }
+            else
+            {
+                println("There are \(sodas) sodas on the wall")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
