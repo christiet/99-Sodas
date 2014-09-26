@@ -15,15 +15,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // 99 Sodas
-        for var sodas = 99; sodas > 0; sodas--
+        for var sodas = 99; sodas >= 0; sodas--
         {
-            if sodas == 1
+            if sodas == 0
             {
-                println("There is \(sodas) soda on the wall")
+                println("There are no more bottles of soda on the wall")
+            }
+            else if sodas == 1
+            {
+                println("There is \(sodas) bottle of soda on the wall")
             }
             else
             {
-                println("There are \(sodas) sodas on the wall")
+                println("There are \(sodas) bottles sodas on the wall")
             }
         }
     }
